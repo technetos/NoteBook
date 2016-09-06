@@ -1,0 +1,16 @@
+{
+  "name":"bookApp",
+  "description":"",
+  "version":"0.1.0",
+  "license":"GPLv3",
+  "private":true,
+  "dependencies": {
+    "angular": "~1.5.6",
+    "angular-ui-router": "~0.3.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3"
+  },
+  "resolutions": {
+    "angular": "1.5.6"
+  }
+}

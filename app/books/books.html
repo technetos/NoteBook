@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    
+    <nav class="col-xs-4" id="sidebar">
+      
+     <ul id="books">
+        <li ng-repeat="book in vm.books">
+            <div>{{ book.title }}</div>
+        </li>
+     </ul>
+ 
+    </nav>
+
+    <main class="col-xs-8" ui-view></main>
+
+  </div>
+</div>
