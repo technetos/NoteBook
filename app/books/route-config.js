@@ -14,7 +14,7 @@
       controller:'BooksController',
       controllerAs:'vm',
       resolve: {
-        getData,
+        booksLoaded:booksLoaded,
       },
     })
 
@@ -25,9 +25,9 @@
       controllerAs:'vm',
     });
 
-    getData.$inject = ['BookDB'];
-    function getData(BookDB) {
-      BookDB.loadBooks();
+    booksLoaded.$inject = ['Book'];
+    function booksLoaded(Book) {
+      //Book.loadBooks();
     };
 
   }

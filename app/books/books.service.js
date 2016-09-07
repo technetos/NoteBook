@@ -1,10 +1,14 @@
 {
-  angular.module('bookApp.books').service('BookDB', BookDB);
+  angular.module('bookApp.books').factory('Book', Book);
 
-  function BookDB() {
-    
-    const service = {
-      books: [],
+  Book.$inject = ['$resource','API'];
+  function Book($resource, API) {
+    return $resource(`${API}books/:id`, null);
+  }
+}
+   
+/*const service = {
+      books: r[],
       loadBooks:loadBooks,
     };
 
@@ -13,7 +17,8 @@
     ///////////////////////////
     
     function loadBooks() {
+
       service.books.push({"title":"C++","content":"abc123"});
     }
   }
-}
+}*/

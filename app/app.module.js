@@ -1,6 +1,9 @@
 {
   angular.module('bookApp', [
       'ui.router',
+      'ng.httpLoader',
+      'ngResource',
+      'btford.markdown',
       'bookApp.books',
       'bookApp.book'
   ]);

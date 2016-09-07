@@ -1,9 +1,9 @@
 {
   angular.module('bookApp.books').controller('BooksController', BooksController);
 
-  BooksController.$inject = ['$scope','BookDB'];
-  function BooksController($scope,BookDB) {
+  BooksController.$inject = ['$scope','Book'];
+  function BooksController($scope,Book) {
     const vm = this;
-    vm.books = BookDB.books;
+    vm.books = Book.query();
   };
 }
